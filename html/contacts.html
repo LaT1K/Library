@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacts.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Fill out the form below to get in touch with us:</p>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
