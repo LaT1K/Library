@@ -1,30 +1,57 @@
-/* Reset CSS */
-* {
+body, ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.content {
+/* Style the menu */
+.menu {
+    background-color: #333;
     padding: 10px;
 }
 
-/* Flexbox for books */
+.menu ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.content h1 {
+    color: #333;
+}
+
+.content p {
+    color: #666;
+}
+
 .books-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
 }
 
 .book {
-    /* flex-bas: 0 calc(25% - 20px);  */
-    flex-basis: calc((100% - 60px) / 3);
     margin: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden; /* Ensure the image doesn't overflow the book container */
-    position: relative; /* Needed for absolute positioning of the book overlay */
-    transition: transform 0.3s ease, z-index 0s; /* Transition for hover effect */
+    transition: transform 0.3s ease, z-index 0s;
     max-width: 185px;
 }
 
@@ -70,3 +97,42 @@
 .book:hover .book-overlay {
     opacity: 1; /* Show overlay on hover */
 }
+
+.left-menu{
+    width: 40%;
+    background-color: #F2F3F6;
+}
+
+.test{
+    display: flex;
+}
+
+.content {
+    /* display: flex; */
+    padding: 10px;
+    /* max-width: 900px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.search-form input[type="search"]{
+    width: 30%;
+    border: 1px solid #E7EBEE;
+    background-color: #fff;
+    color: #222;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    font-style: normal;
+    padding-left: 10px;
+    position: relative;
+    height: 44px;
+    caret-color: initial;
+    border-radius: 100px;
+    transition: background-color 120ms ease;
+    cursor: text;
+}
+
+
