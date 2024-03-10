@@ -4,11 +4,11 @@ body, ul {
     padding: 0;
 }
 .menu {
-    background-color: #333;
+    background-color: #24262b;
     padding: 10px;
 }
 .menu ul {
-    text-align: right;
+    text-align:right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,11 +18,13 @@ body, ul {
     margin-right: 20px;
 }
 .menu ul li a {
+    font-size: 16px;
     color: #fff;
     text-decoration: none;
+    font-weight: 500;
 }
-.menu ul li a:hover {
-    text-decoration: underline;
+.menu ul li a:hover{
+    color: #ccc;
 }
 body{
     line-height: 1.5;

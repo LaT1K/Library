@@ -1,14 +1,59 @@
-.first{
-    width: 100vh;
-    background-color: lightblue;
-}
-
-.second{
-    width: 100vh;
-
-    background-color: lightpink;
+body{
+    background-color: #000
 }
 .content{
     display: flex;
-    justify-content: space-around;
+    color: #fff;
+    margin:100px
 }
+.info{
+    width: 50%;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.image{
+    /* max-height: 250px;
+    max-width: 250px; */
+    width: 50%;
+    padding: 30px;
+    /* margin: 30px 0; */
+    /* padding: 0 15px; */
+    border-radius: 30%;
+}
+input[type="submit"] {
+    font-size: 18px;
+    background-color: #24262b;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top:20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+input[type="submit"]:hover {
+    background-color: #fff;
+    color:#24262b;
+}
+@media(max-width: 1000px) {
+    .content{
+        display: block;
+    }
+    .info{
+        width: auto;
+    }
+    .images{
+        width: auto;
+    }
+}
+
+@media(max-width: 574px) {
+    .content{
+        margin: 40px;
+    }
+}
+
