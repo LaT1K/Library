@@ -1,0 +1,14 @@
+.first{
+    width: 100vh;
+    background-color: lightblue;
+}
+
+.second{
+    width: 100vh;
+
+    background-color: lightpink;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
