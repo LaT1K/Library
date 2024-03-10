@@ -1,138 +1,95 @@
-body, ul {
-    margin: 0;
-    padding: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
-
-/* Style the menu */
-.menu {
-    background-color: #333;
-    padding: 10px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-
-.menu ul {
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.container{
+    max-width: 1170px;
+    margin: auto;
 }
-
-.menu ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.menu ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu ul li a:hover {
-    text-decoration: underline;
-}
-
-
-.content h1 {
-    color: #333;
-}
-
-.content p {
-    color: #666;
-}
-
-.books-container {
+.row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 0;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
-.book {
-    margin: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: transform 0.3s ease, z-index 0s;
-    max-width: 185px;
-}
-
-.book img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
 
-.book h3 {
-    margin-bottom: 5px;
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    padding-left: 8px;
 }
 
-.book p {
-    margin-bottom: 5px;
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10 px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius:  50%;
+    color: #fff;
+    transition: all 0.5s ease;
 }
-
-/* Hover effect for book */
-.book:hover {
-    transform: scale(1.1); /* Scale the book on hover */
-    z-index: 1; /* Ensure the hovered book is on top of others */
-}
-
-/* Book overlay for title and description */
-.book-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Transition for fade-in effect */
-}
-
-.book:hover .book-overlay {
-    opacity: 1; /* Show overlay on hover */
-}
-
-.left-menu{
-    width: 40%;
-    background-color: #F2F3F6;
-}
-
-.test{
-    display: flex;
-}
-
-.content {
-    /* display: flex; */
-    padding: 10px;
-    /* max-width: 900px; */
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-}
-
-.search-form input[type="search"]{
-    width: 30%;
-    border: 1px solid #E7EBEE;
+.footer-col .social-links a:hover{
+    color: #24262b;
     background-color: #fff;
-    color: #222;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1;
-    font-style: normal;
-    padding-left: 10px;
-    position: relative;
-    height: 44px;
-    caret-color: initial;
-    border-radius: 100px;
-    transition: background-color 120ms ease;
-    cursor: text;
 }
 
+@media(max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
 
+@media(max-width: 574px) {
+    .footer-col{
+        width: 100%;
+    }
+}
