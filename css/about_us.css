@@ -1,9 +1,9 @@
 body{
-    background-color: #000
+    background-color: #F2F3F6;;
 }
 .content{
     display: flex;
-    color: #fff;
+    color: #000;
     margin:100px
 }
 .info{
@@ -36,10 +36,9 @@ input[type="submit"] {
     transition: all 1s ease;
 }
 input[type="submit"]:hover {
-    background-color: #fff;
-    color:#24262b;
+    background-color: #000;
 }
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
     .content{
         display: block;
     }
